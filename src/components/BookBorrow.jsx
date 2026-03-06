@@ -218,7 +218,7 @@ export default function BookBorrow() {
       borderRadius: "8px",
       outline: "none",
       backgroundColor: "#fff",
-      color: "#fff",
+      color: "#000",
       boxSizing: "border-box"
     }}
   />
