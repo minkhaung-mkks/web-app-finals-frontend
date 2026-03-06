@@ -1,14 +1,4 @@
 
-input{
-  color: white;
-  background-color: black;
-}
-label{
-  color: black;
-}
-h1,h2,h3,h4,h5,h6{
-  color: black;
-}
 .books-table {
   width: 100%;
   border-collapse: collapse;

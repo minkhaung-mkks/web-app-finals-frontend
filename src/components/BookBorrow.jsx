@@ -191,16 +191,38 @@ export default function BookBorrow() {
               </select>
             </div>
 
-            <div style={{ marginBottom: "12px" }}>
-              <label>Pickup Date</label>
-              <br />
-              <input
-                type="date"
-                name="pickupDate"
-                value={form.pickupDate}
-                onChange={handleChange}
-              />
-            </div>
+            <div style={{ marginBottom: "16px" }}>
+  <label
+    style={{
+      display: "block",
+      marginBottom: "6px",
+      fontSize: "14px",
+      fontWeight: "600",
+      color: "#222"
+    }}
+  >
+    Pickup Date
+  </label>
+
+  <input
+    type="date"
+    name="pickupDate"
+    value={form.pickupDate}
+    onChange={handleChange}
+    style={{
+      width: "100%",
+      maxWidth: "280px",
+      padding: "10px 12px",
+      fontSize: "14px",
+      border: "1px solid #ccc",
+      borderRadius: "8px",
+      outline: "none",
+      backgroundColor: "#fff",
+      color: "#fff",
+      boxSizing: "border-box"
+    }}
+  />
+</div>
 
             <button type="submit">Create Request</button>
           </form>
@@ -218,7 +240,7 @@ export default function BookBorrow() {
           <table border="1" cellPadding="10" style={{ borderCollapse: "collapse", width: "100%" }}>
             <thead>
               <tr>
-                <th>ID</th>
+                <th>Request ID</th>
                 <th>UserID</th>
                 <th>BookID</th>
                 <th>Status</th>
